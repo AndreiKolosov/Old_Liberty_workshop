@@ -1,0 +1,22 @@
+.new-collection__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  box-sizing: border-box;
+  margin: 0 0 50px;
+  padding: 0 0 50px;
+  position: relative;
+}
+.new-collection__title::after {
+  display: block;
+  content: "";
+  width: 120px;
+  border-bottom: 1px solid #fff;
+  position: absolute;
+  left: calc(50% - 60px);
+  top: 100%;
+}

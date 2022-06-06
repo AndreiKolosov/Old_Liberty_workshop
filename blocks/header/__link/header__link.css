@@ -1,0 +1,15 @@
+.header__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  padding: 31px 20px;
+  box-sizing: border-box;
+}
+
+.header__link:hover {
+  background-color: #1f1f1f;
+}

@@ -1,0 +1,4 @@
+.preview__overlay {
+  padding-top: calc(50% * 0.422 - 248px);
+  padding-bottom: calc(50% * 0.422 - 248px);
+}

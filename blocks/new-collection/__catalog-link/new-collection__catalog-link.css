@@ -1,0 +1,15 @@
+.new-collection__catalog-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  align-self: center;
+  max-width: 138px;
+  box-sizing: border-box;
+  padding: 12px 28px;
+  border: 1px solid #fff;
+}
