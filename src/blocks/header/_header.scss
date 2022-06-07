@@ -1,0 +1,110 @@
+.header {
+  display: inline-flex;
+  flex-direction: column;
+
+  &__sign-in {
+    color: #969696;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+
+    &::before {
+      content: "";
+      background-image: url(../img/icon/log-in.svg);
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+
+  &__serch {
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/icon/serch.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 40px;
+  }
+
+  &__nav {
+    display: flex;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #0f0f0f;
+  }
+
+  &__logo {
+    font-family: "Bilbo Swash Caps", Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    color: bisque;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    padding: 31px 20px;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: #1f1f1f;
+    }
+  }
+
+  &__info {
+    color: #969696;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+    align-self: center;
+
+    &::before {
+      content: "";
+      background-image: url(../img/icon/phone-outline.svg);
+      height: 16px;
+      width: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+  }
+
+  &__first-line {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 44px;
+  }
+
+  &__buttons {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__basket {
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/icon/bx-cart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 40px;
+  }
+}

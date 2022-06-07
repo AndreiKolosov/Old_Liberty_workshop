@@ -2,8 +2,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { isDataView } = require('util/types');
 
 module.exports = {
+  target: 'web',
   entry: {
     main: './src/pages/index.js',
   },
@@ -18,6 +20,7 @@ module.exports = {
     open: true,
     compress: true,
     port: 8080,
+    liveReload: true,
   },
   module: {
     rules: [
@@ -41,6 +44,19 @@ module.exports = {
             },
           },
           'postcss-loader',
+        ],
+      },
+      {
+        test: /\.s[ac]ss$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              reloadAll: true,
+            },
+          },
+          'postcss-loader',
+          'sass-loader',
         ],
       },
     ],

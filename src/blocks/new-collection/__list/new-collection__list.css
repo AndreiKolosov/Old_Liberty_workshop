@@ -1,9 +1,0 @@
-.new-collection__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  gap: 50px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}

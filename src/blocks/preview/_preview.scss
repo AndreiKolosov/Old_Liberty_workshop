@@ -1,0 +1,46 @@
+.preview {
+  background-image: url(../img/Old_Liberty_main.JPEG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  width: 100%;
+  /* min-height: 600px; */
+
+  &__overlay {
+    padding-top: calc(50% * 0.422 - 248px);
+    padding-bottom: calc(50% * 0.422 - 248px);
+  }
+
+  &__logo-text {
+    font-family: "Bilbo Swash Caps", Arial, Helvetica, sans-serif;
+    font-size: 62px;
+    line-height: 70px;
+    color: bisque;
+  }
+
+  &__logo {
+    width: 320px;
+    height: 320px;
+    border: 4px solid bisque;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    max-width: 730px;
+    margin: 0;
+    padding-top: 80px;
+    box-sizing: border-box;
+  }
+}

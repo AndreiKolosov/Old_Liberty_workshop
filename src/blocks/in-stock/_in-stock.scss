@@ -1,0 +1,120 @@
+.in-stock {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0 0 50px;
+    padding: 0 0 50px;
+    position: relative;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 120px;
+      border-bottom: 1px solid #fff;
+      position: absolute;
+      left: calc(50% - 60px);
+      top: 100%;
+    }
+  }
+
+  &__quick-view {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 93px 80px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-content: center;
+    gap: 15px;
+  }
+
+  &__product-card {
+    width: 100%;
+    max-width: 330px;
+    max-height: 410;
+  }
+
+  &__item-price {
+    font-size: 16px;
+    line-height: 19px;
+    color: #d0d0d0;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item-name {
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    margin: 0 0 10px;
+    padding: 0;
+  }
+
+  &__item-img {
+    // background-color: #1a1818b4;
+    // box-sizing: border-box;
+    // margin: 0 0 25px;
+    max-width: 330px;
+    width: 100%;
+    padding: 80% 0;
+    // border-radius: 15px;
+    background-image: url(../img/holder.JPEG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &__catalog-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    align-self: center;
+    max-width: 138px;
+    box-sizing: border-box;
+    padding: 12px 28px;
+    border: 1px solid #fff;
+  }
+
+  &__catalog {
+    background-image: url(../img/My_work.JPEG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    padding: 0 0 100px;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(15, 15, 15, 0.5);
+      z-index: -1;
+    }
+  }
+}
