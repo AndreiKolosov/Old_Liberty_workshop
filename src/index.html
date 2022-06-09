@@ -12,7 +12,7 @@
   <div class="page">
     <header class="header">
       <section class="header__first-line">
-        <h1 class="header__info">Old Lierty Калининград | 8 (812) 123-45-67 | Работаем 7 дней в неделю | 9:00 — 18:00
+        <h1 class="header__info">Old Liberty Калининград | 8 (812) 123-45-67 | Работаем 7 дней в неделю | 9:00 — 18:00
         </h1>
         <button type="button" class="page__button header__sign-in">Войти / Регистрация</button>
       </section>
@@ -47,44 +47,123 @@
       </section>
 
       <section class="in-stock">
-
         <div class="in-stock__quick-view">
           <h2 class="in-stock__title">В наличии</h2>
           <ul class="page__list in-stock__list">
             <li>
               <div class="in-stock__product-card">
-                <div class="in-stock__item-img"></div>
-                <h3 class="in-stock__item-name">Классический бифолд</h3>
-                <p class="in-stock__item-price">6500 руб.</p>
+                <img class="in-stock__product-img" src="<%=require('./img/bifold.jpg')%>" alt="бифолд">
+                <h3 class="in-stock__product-name">Классический бифолд</h3>
+                <p class="in-stock__product-price">6500 &nbsp;&#8381;</p>
               </div>
             </li>
             <li>
               <div class="in-stock__product-card">
-                <div class="in-stock__item-img"></div>
-                <h3 class="in-stock__item-name">Классический бифолд</h3>
-                <p class="in-stock__item-price">6500 руб.</p>
+                <img class="in-stock__product-img" src="<%=require('./img/bifold.jpg')%>" alt="бифолд">
+                <h3 class="in-stock__product-name">Классический бифолд</h3>
+                <p class="in-stock__product-price">6500 &nbsp;&#8381;</p>
               </div>
             </li>
             <li>
               <div class="in-stock__product-card">
-                <div class="in-stock__item-img"></div>
-                <h3 class="in-stock__item-name">Классический бифолд</h3>
-                <p class="in-stock__item-price">6500 руб.</p>
+                <img class="in-stock__product-img" src="<%=require('./img/bifold.jpg')%>" alt="бифолд">
+                <h3 class="in-stock__product-name">Классический бифолд</h3>
+                <p class="in-stock__product-price">6500 &nbsp;&#8381;</p>
               </div>
             </li>
           </ul>
         </div>
-
         <div class="in-stock__catalog">
           <h2 class="in-stock__title">Мои работы</h2>
           <a href="#" target="_blank" class="page__link in-stock__catalog-link">каталог</a>
         </div>
-
       </section>
-
+      <section class="blog">
+        <article class="post">
+          <div class="post__img"></div>
+          <div class="post__text-container">
+            <h2 class="post__title">Lorem, ipsum dolor.</h2>
+            <p class="post__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aliquam neque necessitatibus voluptates assumenda
+              voluptas asperiores, blanditiis magnam cum dolor quisquam pariatur dolores et quaerat atque! Illo, est repellat distinctio beatae officia
+              doloribus excepturi eligendi aliquid quasi eaque magnam quo quibusdam at dolorem expedita. At illum molestiae asperiores ratione id consequatur
+              ipsam laudantium iure voluptas! Quam quo pariatur quis nobis!</p>
+            <a href="#" class="page__link post__view-link">подробнее</a>
+          </div>
+        </article>
+      </section>
+      <section class="gallery" id="gallery">
+        <ul class="page__list gallery__list">
+          <li>
+            <img class="gallery__img" src="<%=require('./img/IMG_3276.jpg')%>" alt="#">
+          </li>
+          <li>
+            <img class="gallery__img" src="<%=require('./img/IMG_3276.jpg')%>" alt="#">
+          </li>
+          <li>
+            <img class="gallery__img" src="<%=require('./img/IMG_3276.jpg')%>" alt="#">
+          </li>
+          <li>
+            <img class="gallery__img" src="<%=require('./img/IMG_3276.jpg')%>" alt="#">
+          </li>
+          <li>
+            <img class="gallery__img" src="<%=require('./img/IMG_3276.jpg')%>" alt="#">
+          </li>
+          <li>
+            <img class="gallery__img" src="<%=require('./img/IMG_3276.jpg')%>" alt="#">
+          </li>
+          <li>
+            <img class="gallery__img" src="<%=require('./img/IMG_3276.jpg')%>" alt="#">
+          </li>
+          <li>
+            <img class="gallery__img" src="<%=require('./img/IMG_3276.jpg')%>" alt="#">
+          </li>
+        </ul>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer__about">
+        <h3 class="footer__about-title">Lorem, ipsum </h3>
+        <p class="footer__about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam eos maxime voluptatum officia nostrum ullam modi
+          recusandae in! Culpa ut suscipit debitis, velit placeat repellendus, aliquid cupiditate sint voluptas architecto exercitationem facere quam sit
+          commodi. Sunt dolorum ullam ducimus, nam adipisci doloremque architecto eos aut similique saepe id et?</p>
+      </div>
+      <div class="footer__nav">
+        <nav>
+          <ul class="page__list footer__nav-list">
+            <li><a class="page__link footer__nav-link" href="#">Каталог</a></li>
+            <li><a class="page__link footer__nav-link" href="#">Блог</a></li>
+            <li><a class="page__link footer__nav-link" href="#">Галерея</a></li>
+            <li><a class="page__link footer__nav-link" href="#">На верх</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__communications">
+        <div class="footer__social">
+          <h3 class="footer__social-title">Я в соцсетях :</h3>
+          <ul class="page__list footer__social-list">
+            <li><a href="#" class="page__link footer__social-link"><img src="<%=require('./img/social-icons/vk.svg')%>" alt="VK"></a></li>
+            <li><a href="#" class="page__link footer__social-link"><img src="<%=require('./img/social-icons/instagram.svg')%>" alt="Instagram"></a></li>
+            <li><a href="#" class="page__link footer__social-link"><img src="<%=require('./img/social-icons/telegram.svg')%>" alt="Telegram"></a></li>
+            <li><a href="#" class="page__link footer__social-link"><img src="<%=require('./img/social-icons/github.svg')%>" alt="GitHub"></a></li>
 
-    <footer class="footer"></footer>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <h3 class="footer__contacts-title">Связаться со мной :</h3>
+          <p class="footer__contacts-explanation">Вы можете написать мне <a href="mailto:oldlibert@yandex.ru"
+              class="page__link footer__contacts-mail-link">на&nbsp;почту</a> или
+            оставить свою, и я обязательно свяжусь с Вами!</p>
+          <form class="page__form form" action="submit">
+            <input class="form__email-input" type="email" name="client-email" id="footer-form-input">
+            <button class="form__button button" type="submit">&#9996;</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__author">&copy;&nbsp;Andrei Kolosov 2022</p>
+        <span class="footer__caption">Мастерская Old Liberty</span>
+      </div>
+    </footer>
   </div>
 </body>
 

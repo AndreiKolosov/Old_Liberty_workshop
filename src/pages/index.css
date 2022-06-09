@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "../vendor/fonts.css";
 .home {
   display: flex;
@@ -48,6 +49,44 @@
 }
 .page__button:hover {
   opacity: 0.6;
+}
+
+.form__email-input {
+  border: none;
+  outline: none;
+  background-color: rgba(142, 142, 152, 0.2);
+  border-radius: 8px 0px 0px 8px;
+  width: 300px;
+  height: 50px;
+  box-sizing: border-box;
+  position: relative;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.375px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+.form__button {
+  position: absolute;
+  width: 121px;
+  height: 50px;
+  background-color: #47474c;
+  border-radius: 0px 8px 8px 0px;
+  color: #fff;
+}
+.form__button::before {
+  content: "Ваш e-mail";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  letter-spacing: 0.375px;
+  margin: 0 5px 0 0;
+}
+.form__button_active::before {
+  content: "Круто, спасибо за доверие!";
 }
 
 .header {
@@ -233,28 +272,25 @@
   max-width: 330px;
   max-height: 410;
 }
-.in-stock__item-price {
+.in-stock__product-price {
   font-size: 16px;
   line-height: 19px;
   color: #d0d0d0;
   margin: 0;
   padding: 0;
 }
-.in-stock__item-name {
+.in-stock__product-name {
   font-size: 18px;
   line-height: 21px;
   color: #fff;
   margin: 0 0 10px;
   padding: 0;
 }
-.in-stock__item-img {
+.in-stock__product-img {
+  background-color: rgba(26, 24, 24, 0.7058823529);
+  box-sizing: border-box;
   max-width: 330px;
   width: 100%;
-  padding: 80% 0;
-  background-image: url(../img/holder.JPEG);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 .in-stock__catalog-link {
   font-style: normal;
@@ -270,9 +306,10 @@
   box-sizing: border-box;
   padding: 12px 28px;
   border: 1px solid #fff;
+  border-radius: 7px;
 }
 .in-stock__catalog {
-  background-image: url(../img/My_work.JPEG);
+  background-image: url(../img/My_work.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -294,4 +331,211 @@
   height: 100%;
   background-color: rgba(15, 15, 15, 0.5);
   z-index: -1;
+}
+
+.blog {
+  box-sizing: border-box;
+}
+
+.post {
+  display: flex;
+}
+.post__img {
+  max-width: 880px;
+  max-height: 600px;
+  width: 100%;
+  padding: 18% 0;
+  background-image: url(../img/belt.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(70, 67, 63);
+}
+.post__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 100px 0;
+}
+.post__title {
+  font-style: normal;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 0 80px 0;
+  word-break: break-word;
+  color: #fff;
+}
+.post__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  max-width: 500px;
+  word-break: break-word;
+  margin: 0 0 60px 0;
+}
+.post__view-link {
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  word-break: break-word;
+  max-width: 300px;
+  border: 1px solid #fff;
+  padding: 12px 28px;
+  border-radius: 7px;
+  text-transform: uppercase;
+}
+
+.gallery {
+  padding: 150px;
+  display: flex;
+  justify-content: center;
+}
+.gallery__list {
+  width: 70%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 10px 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.gallery__img {
+  max-width: 300px;
+  max-height: 450px;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  background-color: #000;
+  display: grid;
+  grid-template-areas: "about navigation communications" "about navigation communications" "copyright copyright copyright";
+  padding: 60px 0 0;
+  justify-content: space-between;
+}
+.footer__about {
+  grid-area: about;
+  display: grid;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 0 100px 60px;
+}
+.footer__about-title {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  word-break: break-word;
+  max-width: 250px;
+  margin: 0 0 40px 0;
+}
+.footer__about-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  word-break: break-word;
+  max-width: 350px;
+  margin: 0;
+}
+.footer__nav {
+  grid-area: navigation;
+  display: grid;
+  justify-content: center;
+}
+.footer__nav-list {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+}
+.footer__nav-link {
+  color: #fff;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  word-break: break-word;
+  max-width: 250px;
+}
+.footer__communications {
+  grid-area: communications;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+  margin: 0 0 50px 0;
+}
+.footer__social-title {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  word-break: break-word;
+  max-width: 250px;
+  margin: 0 40px 0 0;
+}
+.footer__social-list {
+  display: grid;
+  gap: 15px 15px;
+  grid-template-columns: repeat(2, 32px);
+}
+.footer__contacts {
+  display: grid;
+  padding: 0 60px 30px 0;
+}
+.footer__contacts-title {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  word-break: break-word;
+  max-width: 250px;
+  margin: 0 0 20px;
+}
+.footer__contacts-explanation {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  word-break: break-word;
+  max-width: 450px;
+  margin: 0 0 30px 0;
+}
+.footer__contacts-mail-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgb(109, 97, 30);
+}
+.footer__copyright {
+  grid-area: copyright;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: rgb(20, 17, 17);
+}
+.footer__author {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #cec7c7;
+}
+.footer__caption {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #cec7c7;
 }/*# sourceMappingURL=index.css.map */
