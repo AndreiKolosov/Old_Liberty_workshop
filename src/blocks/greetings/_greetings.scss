@@ -1,0 +1,31 @@
+.greetings {
+  grid-area: greetings;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 160px 0 110px;
+
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: #fff;
+    max-width: 700px;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+    word-break: break-all;
+    max-width: 700px;
+    margin: 0;
+  }
+}

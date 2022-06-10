@@ -1,0 +1,22 @@
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  justify-content: center;
+  max-width: 15%;
+  background-color: rgba(14, 13, 13);
+  opacity: 0;
+  transition: opacity linear 0.2s;
+  padding: 20px 0 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &__up-button {
+    color: rgb(94, 91, 91);
+    border: 0.5px solid rgb(94, 91, 91);
+    padding: 5px;
+    border-radius: 50%;
+    align-self: start;
+  }
+}

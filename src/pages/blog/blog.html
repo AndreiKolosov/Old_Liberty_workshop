@@ -10,7 +10,7 @@
 
 <body class="home">
   <div class="page">
-    <header class="header">
+    <header class="header" id="header">
       <section class="header__first-line">
         <h1 class="header__info">Old Liberty Калининград | 8 (812) 123-45-67 | Работаем 7 дней в неделю | 9:00 — 18:00
         </h1>
@@ -31,25 +31,32 @@
         </nav>
       </section>
     </header>
-    <main class="main">
+    <main class="main main_type_blog">
       <section class="greetings" aria-label="greetings">
-        <p class="greetings__text">Добро пожаловать в блог мастерской Old Liberty. Ламповая атмосфера и интересные истории из жизни кожевника... и не только =)
+        <h1 class="greetings__title">Добро пожаловать в блог мастерской Old&nbsp;Liberty.</h1>
+        <p class="greetings__text">Ламповая атмосфера и интересные истории из жизни кожевника... и не только =)
         </p>
       </section>
       <section class="posts" aria-label="posts">
         <ul class="page__list posts__list">
           <li class="posts__item">
-            <article class="post">
-              <img src="<%=require('../../img/post_plug.jpg')%>" alt="Шкуры">
-              <span class="post__topic">Leaser work</span>
-              <h2 class="post__title">Lorem, ipsum.</h2>
-              <p class="post__preview">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolor iure odio! Vel ipsa ratione deserunt voluptas
-                fugiat eius nesciunt cumque ab illo dolorum explicabo praesentium magni, libero corrupti labore!</p>
-              <span class="post__date">22 April 2022</span>
+            <article class="article">
+              <img class="article__img" src="<%=require('../../img/post_plug.jpg')%>" alt="Шкуры">
+              <div class="article__text-wrapper">
+                <span class="article__topic">Leaser work</span>
+                <h2 class="article__title">Lorem, ipsum.</h2>
+                <p class="article__preview-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolor iure odio! Vel ipsa ratione deserunt
+                  voluptas
+                  fugiat eius nesciunt cumque ab illo dolorum explicabo praesentium magni, libero corrupti labore!</p>
+                <span class="article__date">22 April 2022</span>
+              </div>
             </article>
           </li>
         </ul>
       </section>
+      <aside class="sidebar">
+        <button class="page__button sidebar__up-button">&uarr;</button>
+      </aside>
     </main>
   </div>
 </body>

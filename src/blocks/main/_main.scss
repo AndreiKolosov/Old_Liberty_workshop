@@ -1,0 +1,8 @@
+.main {
+  width: 100%;
+  // flex: 1;
+  display: grid;
+  grid-template-areas:
+    "greetings greetings greetings"
+    "sidebar posts posts";
+}
