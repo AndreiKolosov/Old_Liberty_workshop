@@ -1,0 +1,148 @@
+@import "../../vendor/fonts.css";
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #000000;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "PT-Sans", Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+.page__overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(15, 15, 15, 0.5);
+}
+.page__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.page__link {
+  transition: opacity linear 0.2s;
+  text-decoration: none;
+}
+.page__link:hover {
+  opacity: 0.8;
+}
+.page__button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  transition: opacity linear 0.2s;
+}
+.page__button:hover {
+  opacity: 0.6;
+}
+
+.header {
+  display: inline-flex;
+  flex-direction: column;
+}
+.header__sign-in {
+  color: #969696;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+}
+.header__sign-in::before {
+  content: "";
+  background-image: url(../../img/icon/log-in.svg);
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.header__serch {
+  width: 22px;
+  height: 22px;
+  background-image: url(../../img/icon/serch.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 40px;
+}
+.header__nav {
+  display: flex;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #0f0f0f;
+}
+.header__logo {
+  font-family: "Bilbo Swash Caps", Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  color: bisque;
+}
+.header__list {
+  display: flex;
+}
+.header__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  padding: 31px 20px;
+  box-sizing: border-box;
+}
+.header__link:hover {
+  background-color: #1f1f1f;
+}
+.header__info {
+  color: #969696;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  align-self: center;
+}
+.header__info::before {
+  content: "";
+  background-image: url(../../img/icon/phone-outline.svg);
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.header__first-line {
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 44px;
+}
+.header__controls {
+  display: inline-flex;
+  align-items: center;
+}
+.header__basket {
+  width: 22px;
+  height: 22px;
+  background-image: url(../../img/icon/bx-cart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 40px;
+}/*# sourceMappingURL=blog.css.map */

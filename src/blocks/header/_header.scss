@@ -12,7 +12,7 @@
 
     &::before {
       content: "";
-      background-image: url(../img/icon/log-in.svg);
+      background-image: url(../../img/icon/log-in.svg);
       width: 14px;
       height: 14px;
       display: inline-block;
@@ -24,7 +24,7 @@
   &__serch {
     width: 22px;
     height: 22px;
-    background-image: url(../img/icon/serch.svg);
+    background-image: url(../../img/icon/serch.svg);
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 40px;
@@ -79,7 +79,7 @@
 
     &::before {
       content: "";
-      background-image: url(../img/icon/phone-outline.svg);
+      background-image: url(../../img/icon/phone-outline.svg);
       height: 16px;
       width: 16px;
       display: inline-block;
@@ -94,7 +94,7 @@
     min-height: 44px;
   }
 
-  &__buttons {
+  &__controls {
     display: inline-flex;
     align-items: center;
   }
@@ -102,7 +102,7 @@
   &__basket {
     width: 22px;
     height: 22px;
-    background-image: url(../img/icon/bx-cart.svg);
+    background-image: url(../../img/icon/bx-cart.svg);
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 40px;

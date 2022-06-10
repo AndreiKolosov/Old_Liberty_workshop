@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "../vendor/fonts.css";
+@import "../../vendor/fonts.css";
 .home {
   display: flex;
   flex-direction: column;
@@ -103,7 +103,7 @@
 }
 .header__sign-in::before {
   content: "";
-  background-image: url(../img/icon/log-in.svg);
+  background-image: url(../../img/icon/log-in.svg);
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -113,7 +113,7 @@
 .header__serch {
   width: 22px;
   height: 22px;
-  background-image: url(../img/icon/serch.svg);
+  background-image: url(../../img/icon/serch.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 40px;
@@ -161,7 +161,7 @@
 }
 .header__info::before {
   content: "";
-  background-image: url(../img/icon/phone-outline.svg);
+  background-image: url(../../img/icon/phone-outline.svg);
   height: 16px;
   width: 16px;
   display: inline-block;
@@ -173,21 +173,21 @@
   justify-content: space-evenly;
   min-height: 44px;
 }
-.header__buttons {
+.header__controls {
   display: inline-flex;
   align-items: center;
 }
 .header__basket {
   width: 22px;
   height: 22px;
-  background-image: url(../img/icon/bx-cart.svg);
+  background-image: url(../../img/icon/bx-cart.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 40px;
 }
 
 .preview {
-  background-image: url(../img/Old_Liberty_main.JPEG);
+  background-image: url(../../img/Old_Liberty_main.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -309,7 +309,7 @@
   border-radius: 7px;
 }
 .in-stock__catalog {
-  background-image: url(../img/My_work.jpg);
+  background-image: url(../../img/My_work.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -345,7 +345,7 @@
   max-height: 600px;
   width: 100%;
   padding: 18% 0;
-  background-image: url(../img/belt.jpg);
+  background-image: url(../../img/belt.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

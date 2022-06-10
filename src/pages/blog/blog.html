@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Old Liberty Blog</title>
+</head>
+
+<body class="home">
+  <div class="page">
+    <header class="header">
+      <section class="header__first-line">
+        <h1 class="header__info">Old Liberty Калининград | 8 (812) 123-45-67 | Работаем 7 дней в неделю | 9:00 — 18:00
+        </h1>
+        <button type="button" class="page__button header__sign-in">Войти / Регистрация</button>
+      </section>
+      <section class="header__menu" aria-label="menu">
+        <span class="header__logo">Old Liberty</span>
+        <nav class="header__nav">
+          <ul class="page__list header__list">
+            <li><a href="index.html" class="page__link header__link">главная</a></li>
+            <li><a href="personal.html" class="page__link header__link">личный кабинет</a></li>
+            <li><a href="gallery.html" class="page__link header__link">галерея</a></li>
+          </ul>
+          <div class="header__controls">
+            <a href="cart.html" class="page__link header__basket"></a>
+            <button type="button" class="page__button header__serch"></button>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <main class="main">
+      <section class="greetings" aria-label="greetings">
+        <p class="greetings__text">Добро пожаловать в блог мастерской Old Liberty. Ламповая атмосфера и интересные истории из жизни кожевника... и не только =)
+        </p>
+      </section>
+      <section class="posts" aria-label="posts">
+        <ul class="page__list posts__list">
+          <li class="posts__item">
+            <article class="post">
+              <img src="<%=require('../../img/post_plug.jpg')%>" alt="Шкуры">
+              <span class="post__topic">Leaser work</span>
+              <h2 class="post__title">Lorem, ipsum.</h2>
+              <p class="post__preview">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolor iure odio! Vel ipsa ratione deserunt voluptas
+                fugiat eius nesciunt cumque ab illo dolorum explicabo praesentium magni, libero corrupti labore!</p>
+              <span class="post__date">22 April 2022</span>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
