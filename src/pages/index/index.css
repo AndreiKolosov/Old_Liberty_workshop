@@ -204,11 +204,22 @@
   font-size: 62px;
   line-height: 70px;
   color: bisque;
+  -webkit-animation: appearance 1s linear;
+          animation: appearance 1s linear;
+}
+.preview__logo-img {
+  width: 180px;
+  fill: #ffe4c4;
+  -webkit-animation: appearance 3s linear;
+          animation: appearance 3s linear;
 }
 .preview__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 320px;
   height: 320px;
-  border: 4px solid bisque;
+  border: 4px solid #ffe4c4;
   border-radius: 15px;
   box-sizing: border-box;
   display: flex;
@@ -229,6 +240,23 @@
   box-sizing: border-box;
 }
 
+@-webkit-keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .in-stock {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -309,7 +337,7 @@
   border-radius: 7px;
 }
 .in-stock__catalog {
-  background-image: url(../../img/My_work.jpg);
+  background-image: url(../../img/docs&bifold.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
